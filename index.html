@@ -16,10 +16,10 @@
 <script>
  $(function(){
 
-    let wh = $(window).height();//브라우저창의 높이값
+    let wh = $(window).height();
     //alert(wh);
 
-    $(window).resize(function(){//브라우져창의 크기가 조절되엇을때
+    $(window).resize(function(){
         wh = $(window).height();
 
         $('html,body').stop().animate({ scrollTop:wh*a},700);
@@ -48,7 +48,7 @@
         
         let b = $(document).scrollTop();
 
-        if((b >=0) && (b >= wh-(200))) {	//스크롤한 높이가 0~1200일경우 200px 앞으로 당긴듯?
+        if((b >=0) && (b >= wh-(200))) {	
 			$(".nabm").css({ left: 50 });
             $(".icon3 div:eq(0)").css({ width: 320 });
             $(".icon3 div:eq(1)").css({ width: 320 });
@@ -59,7 +59,7 @@
             $(".icon3 div").css({ width: 0 });
 		}
 
-        if((b >=0) && (b >= wh-(500))) {	//스크롤한 높이가 0~1200일경우 200px 앞으로 당긴듯?
+        if((b >=0) && (b >= wh-(500))) {	
             $("h2:eq(0)").css({ bottom: -100 });
 		}else{
             $("h2:eq(0)").css({ bottom: 25 });
@@ -81,7 +81,7 @@
 
 
         $(".nab").mouseenter(function(){
-		$(".nabs").show();  //$("A",this) :  this의 하위요소 중 A 	
+		$(".nabs").show();  
 	    });
 	
 	    $(".nab").mouseleave(function(){
@@ -89,17 +89,17 @@
 	    });
 
 /*------------레이어 팝업 (모달)------------*/
-    $('.pr').click(function(){//각 메뉴를 클릭했을때
-	    $(this).next().show();	  //이 다음 형제인  .pop을 보이게함
+    $('.pr').click(function(){
+	    $(this).next().show();	 
         $("#about h2").hide();
-	    $('body').css({overflow:"hidden"});//body스크롤없앰
+	    $('body').css({overflow:"hidden"});
 	    return false;
     });
   
-    $('.close').click(function(){//close눌렀을때
-	    $('.pop').hide(); //.pop을 안보이게함
+    $('.close').click(function(){
+	    $('.pop').hide();
         $("#about h2").show();
- 	    $('body').css({overflow:"auto"});//body스크롤생김
+ 	    $('body').css({overflow:"auto"});
 	    return false;
     });
 
@@ -222,7 +222,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="codin"><a href="http://audgk6656.woobi.co.kr/portfolio/s1/sub1.html" target="_blank"><p>사이트</p></a></div>
+                                <div class="codin"><a href="s1/sub1.html" target="_blank"><p>사이트</p></a></div>
                             <img src="images/portfolio_1.jpg" alt="파크짐 포토폴리오 상세 이미지">
                             </div>
                             <a href="#" class="close"><img src="images/close.png" alt="닫기"> </a>
@@ -308,7 +308,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="codin"><a href="http://audgk6656.woobi.co.kr/portfolio/s4/sub4.html" target="_blank"><p>사이트</p></a></div>
+                                <div class="codin"><a href="s4/sub4.html" target="_blank"><p>사이트</p></a></div>
                                 <img src="images/portfolio_3.jpg" alt="아디다스 포토폴리오 상세 이미지">
                             </div>
                             <a href="#" class="close"><img src="images/close.png" alt="닫기"> </a>
